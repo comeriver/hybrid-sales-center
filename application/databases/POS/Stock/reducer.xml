@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DOCUMENT_ELEMENT table_name="reducer" creation_time="1639238104" modified_time="1639238104" table_version="0.0" module_version="1.00" table_class="POS_Stock_Reducer" creation_ip="0">
+  <RECORDS autoId="9">
+    <TABLE_ROW ROW_ID="1">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[0]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[-30]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via POS&quot;,&quot;0-1639238103-11&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639238104]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[0]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639238104-1]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="2">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/11/iphone-7.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[iPhone 7]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[250]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[249]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via POS&quot;,&quot;0-1639238185-12&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639238186]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[0]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639238186-2]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="3">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/11/bornvita.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[Bornvita]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[265]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[264]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[1]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via POS&quot;,&quot;0-1639238473-13&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639238473]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639238473-3]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="4">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/11/iphone-7.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[iPhone 7]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[249]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[200]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[49]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via POS&quot;,&quot;0-1639238505-14&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639238506]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639238506-4]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="5">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/10/samsung-s31.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[Samsung s31]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[905]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[900]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[5]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via POS&quot;,&quot;0-1639240972-15&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639240973]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639240973-5]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="6">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/10/samsung-s31.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[Samsung s31]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[910]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[900]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[10]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via POS&quot;,&quot;0-1639241446-16&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639241447]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639241447-6]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="7">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/10/samsung-s31.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[Samsung s31]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[900]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[800]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[100]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via e-channel&quot;,&quot;0-1639242187-20&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639242188]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639242188-7]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+    <TABLE_ROW ROW_ID="8">
+      <TABLE_FIELD FIELD_KEY="article_url"><![CDATA[/2021/12/10/samsung-s31.html]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="article_title"><![CDATA[Samsung s31]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_before"><![CDATA[800]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_after"><![CDATA[790]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="stock_removed"><![CDATA[10]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reason"><![CDATA[[&quot;Bought&quot;,&quot;Via e-channel&quot;,&quot;0-1639242226-21&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1639242228]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1502904455.4154]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__duuid"><![CDATA[84e6be38-4d7f-4a95-94bf-3804044cc885]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="reducer_id"><![CDATA[0-1639242228-8]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+    </TABLE_ROW>
+  </RECORDS>
+  <TABLE_SETTINGS>
+    <DATA_TYPES article_url="INPUTTEXT" article_title="INPUTTEXT" stock_removed="INT" stock_before="INT" stock_after="INT" reason="JSON" reducer_id="INPUTTEXT" creation_time="INPUTTEXT" modified_time="INPUTTEXT" __user_id="INPUTTEXT" __update_user_id="JSON" __user_agent_id="INPUTTEXT" __ip="JSON" __duuid="INPUTTEXT"/>
+    <FOREIGN_KEYS/>
+    <RELATIVES/>
+  </TABLE_SETTINGS>
+</DOCUMENT_ELEMENT>

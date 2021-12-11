@@ -1,0 +1,79 @@
+<?php
+/**
+* PageCarton Page Generator
+*
+* LICENSE
+*
+* @category PageCarton
+* @package /barcode
+* @generated Ayoola_Page_Editor_Layout
+* @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
+* @license    http://www.PageCarton.com/license.txt
+* @version $Id: barcode.php	Saturday 11th of December 2021 11:27:51 AM	ayoola@ayoo.la $ 
+*/
+//	Page Include Content
+
+							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
+							{
+								
+$_8b94555b5045e1bd885b74178db9b854 = new Ayoola_Page_Editor_Text( array (
+  '' => NULL,
+  'editable' => '
+<div id="video-wrapper">
+          <canvas id="canvas" width="640" height="480"></canvas><video id="video" width="640" height="480" autoplay></video>
+</div>
+
+',
+  'includes' => 
+  array (
+  ),
+  'content' => '
+<div id="video-wrapper">
+          <canvas id="canvas" width="640" height="480"></canvas><video id="video" width="640" height="480" autoplay></video>
+</div>
+
+',
+  'pagewidget_id' => NULL,
+) );
+
+							}
+							else
+							{
+								
+$_8b94555b5045e1bd885b74178db9b854 = null;
+
+							}
+							
+							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
+							{
+								
+$_f4a8298d93e2d25ed8487246f0310912 = new Ayoola_Page_Editor_Text( array (
+  '' => NULL,
+  'editable' => '
+<div>
+          <h1>Recently Scanned</h1>
+          <div id="scanned"></div>
+        </div>
+
+',
+  'includes' => 
+  array (
+  ),
+  'content' => '
+<div>
+          <h1>Recently Scanned</h1>
+          <div id="scanned"></div>
+        </div>
+
+',
+  'pagewidget_id' => NULL,
+) );
+
+							}
+							else
+							{
+								
+$_f4a8298d93e2d25ed8487246f0310912 = null;
+
+							}
+							

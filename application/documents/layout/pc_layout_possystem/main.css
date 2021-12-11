@@ -1,0 +1,132 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 7rem;
+
+}
+
+#content-wrap {
+    /* Footer height */
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    text-align: center;
+    font-size: small;
+    padding: 4em;
+}
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #0b0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 1em;
+}
+.inline-st{
+    display: inline-block;
+}
+.xy-container
+{
+    font-size: 12px; 
+    padding: 2em; 
+    border-bottom: 2px solid #eee;
+}
+.x-content
+{
+    width: 96.5%;
+    margin: 0 auto;
+    border-right: 2px solid #eee;
+    border-left: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 1em 2em;
+    color: #aaa;
+    font-size: small;
+}
+.xy-container
+{
+    border-bottom: 2px solid #eee;
+}
+
+.xy-round-border
+{
+    border: 2px solid #eee;
+    padding: 1em;
+    margin: 0.5em 0;
+}
+.pos-link
+{
+    display: block;
+    background: #eee;
+    color: #333;
+    text-align: center;
+    padding: 3px;
+    font-size: small;
+    text-decoration: none;
+}
+.pos-element
+{
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px 1em;
+}
+.pos-element-text
+{
+    margin-bottom: 5px;
+}
+
+.pos-button
+{
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+}
+.pos-print-page
+{
+    max-width: 300px;
+    padding: 0.5em;
+}
+
+.pos-print-page .pc-cart-row
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em 0;
+    color: #333;
+}
+.pos-print-page .pc-cart-row > div, .pos-print-page  .pc-cart-row > span, .pos-print-page  .pc-cart-row > input
+{
+    border: none;
+    padding: 0.3em;
+    width: 100%;
+    margin: 0 0.5em ;
+}
+.pos-print-page .pc-cart-row > input[type=button]
+{
+    display: none;
+}
+
+.pos-print-page .pc-cart-row > .multiple-cart-column
+{
+    flex-basis:5%;
+    text-align: left;
+}
+.pos-print-page .pc-cart-row > .item-cart-column
+{  
+    flex-basis:45%;
+    text-align: left;
+}
+.pos-print-page .pc-cart-row > .delete-cart-column
+{  
+    display: none;
+}
+.pos-print-page .pc-cart-row > .x-cart-column
+{  
+    flex-basis:40%;
+    max-width: 45%;
+    overflow: auto;
+    text-align: right;;
+}

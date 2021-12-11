@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DOCUMENT_ELEMENT table_name="checkoutoption" creation_time="1639171361" modified_time="1639171361" table_version="0.04" module_version="1.00" table_class="Application_Subscription_Checkout_CheckoutOption" creation_ip="0">
+  <RECORDS autoId="2"/>
+  <TABLE_SETTINGS>
+    <DATA_TYPES checkoutoption_name="INPUTTEXT, UNIQUE" checkoutoption_logo="TEXTAREA" logo="INPUTTEXT" object_name="INPUTTEXT" checkout_type="INPUTTEXT" default_parameter_fields="JSON" custom_parameter_fields="JSON" form_attribute_name="JSON" form_attribute_value="JSON" default_form_field_name="JSON" default_form_field_value="JSON" enabled="INT" checkoutoption_id="INPUTTEXT" creation_time="INPUTTEXT" modified_time="INPUTTEXT" __user_id="INPUTTEXT" __update_user_id="JSON" __user_agent_id="INPUTTEXT" __ip="JSON" __duuid="INPUTTEXT"/>
+    <FOREIGN_KEYS/>
+    <RELATIVES/>
+  </TABLE_SETTINGS>
+</DOCUMENT_ELEMENT>

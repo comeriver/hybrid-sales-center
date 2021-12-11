@@ -1,0 +1,296 @@
+<?php
+/**
+* PageCarton Page Generator
+*
+* LICENSE
+*
+* @category PageCarton
+* @package /p
+* @generated Ayoola_Page_Editor_Layout
+* @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
+* @license    http://www.PageCarton.com/license.txt
+* @version $Id: p.php	Saturday 11th of December 2021 12:18:21 PM	ayoola@ayoo.la $ 
+*/
+//	Page Include Content
+
+							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
+							{
+								
+$_27bb1773dba6b8146e9ae38767bad53b = new Ayoola_Page_Editor_Text( array (
+  '' => NULL,
+  'editable' => '
+<div class="x-content">
+                <form method="post" name="pos" action="/p">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <widget parameters=\'{ "class": "POS_Checkout" }\'></widget>
+</div>
+                        <div class="col-md-4 ">
+                            
+                            <p>
+                                Customer Name: 
+                                <input class="pos-element" type="text" name="full_name" placeholder="e.g. John Adigun"></p>
+                                
+                            <widget parameters=\'{ "class": "Application_Subscription_Cart" }\'></widget><br><p>
+                                Customer Phone Number: 
+                                <input class="pos-element" type="phone" name="phone_number" placeholder="e.g. 2348030001234"></p>
+                            <p>
+                                Customer Email: 
+                                <input class="pos-element" type="email" name="email" placeholder="e.g. email@example.com"></p>
+                            <widget parameters=\'{ "class": "Application_Subscription_Checkout_CheckoutOption" }\'><input style="vertical-align:middle;" checked id="checkoutoption_cash" type="radio" name="checkoutoption" value="Cash"><label style="margin: 0 5px; vertical-align:middle;" for="checkoutoption_cash">Cash</label>
+
+                                <!--{{{0}}}
+                                <span style="display:inline-block;">
+                                    <input style="vertical-align:middle;" id="checkoutoption_{{{checkoutoption_name}}}" type="radio" name="checkoutoption" value="{{{checkoutoption_name}}}" > 
+                                    <label style="margin: 0 5px; vertical-align:middle;" for="checkoutoption_{{{checkoutoption_name}}}">{{{checkoutoption_name}}}</label>
+                                </span>
+                                {{{0}}}-->
+                            </widget><script>
+                                var addProduct = function( article_url, article_title )
+                                {
+                                    let element = document.getElementById( "product-xy" );
+                                    if( ! element )
+                                    {
+                                        return false;
+                                    }
+                                    var option = document.createElement("option");
+                                    option.value = article_url;
+                                    option.text = article_title ? article_title : article_url;
+                                    element.add(option);
+
+                                    element.value = article_url;
+                                    element.onchange();
+                                }
+                                window.onload = function()
+                                {
+                                    $(".product-xy").select2(\'open\');
+                                }
+                            </script>
+</div>
+                        <div class="col-md-5">
+                            <div class="xy-round-border">
+                                
+                                    <div class="pos-element-text">Search Product: </div>
+                                    <widget parameters=\'{ 
+                                        "class": "Ayoola_Form_Element_Type_SelectTwo", 
+                                        "id": "product-xy", 
+                                        "name": "add_product", 
+                                        "config": { 
+                                            "ajax": { 
+                                                "url": "/widgets/Application_Article_Search?true_post_type=product", 
+                                                "delay": 500
+                                            }, 
+                                            "placeholder": "Search by item name, code or serial number", 
+                                            "minimumInputLength": 2,
+                                            "width": "100%"
+                                        },
+                                        "onchange": "document.forms.pos.submit()"
+
+                                    }\'><select id="{{{id}}}" class="{{{id}}}" name="{{{name}}}" onchange="{{{onchange}}}"><data-values><values-repeat><option value="{{{key}}}">{{{value}}}</option></values-repeat></data-values></select></widget><hr>
+<p>
+                                    MOST POPULAR ITEMS 
+                                </p>
+
+                                <div class="row" style="text-align: center;">
+                                    <widget parameters=\'{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "trending": 200, "add_a_new_post": 4, "no_of_post_to_show": 8 }\'><!--{{{0}}}
+                                        <div class="col-md-3">
+                                            <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}\'s photo">
+                                            </a>
+                                            <p>
+                                                <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                    {{{article_title}}}
+                                                </a>
+                                            </p>
+                                            
+                                        </div>
+                                        {{{0}}}--></widget>
+</div>
+                                <hr>
+<p>
+                                    RECENT ITEMS 
+                                </p>
+
+                                <div class="row" style="text-align: center;">
+                                    <widget parameters=\'{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "add_a_new_post": 4, "no_of_post_to_show": 8 }\'><!--{{{0}}}
+                                        <div class="col-md-3">
+                                            <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}\'s photo">
+                                            </a>
+                                            <p>
+                                                <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                    {{{article_title}}}
+                                                </a>
+                                            </p>
+                                            
+                                        </div>
+                                        {{{0}}}--></widget>
+</div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="xy-round-border">
+                                <widget parameters=\'{ "class": "Ayoola_Access_Dashboard" }\'><div style="text-align: center;">
+                                        <img style="border-radius: 50%;" src="/widgets/Application_IconViewer/?url={{{display_picture}}}&amp;max_width=60&amp;max_height=60" alt="{{{firstname}}}\'s photo"><p>{{{firstname}}} {{{lastname}}}</p>
+                                        <p><a class="pos-link" href="#">Stock Balance</a></p>
+                                        <p><a class="pos-link" href="#">Today\'s sales</a></p>
+                                        <p><a class="pos-link" href="#">Change Profile</a></p>
+                                        <p><a class="pos-link" href="/accounts/signout?previous_url=/p">Close Shift</a></p>
+                                        <p><a class="pos-link" target="orders" href="#">Recent Orders</a></p>
+                                        <p><a class="pos-link" target="product" href="/widgets/Application_Article_Publisher">Add Item</a></p>
+                                    </div>
+                                </widget>
+</div>
+                            <button name="submit-button" class="pos-button pc-bg-color" type="submit" value="confirm">Confirm Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+',
+  'includes' => 
+  array (
+  ),
+  'content' => '
+<div class="x-content">
+                <form method="post" name="pos" action="/p">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <widget parameters=\'{ "class": "POS_Checkout" }\'></widget>
+</div>
+                        <div class="col-md-4 ">
+                            
+                            <p>
+                                Customer Name: 
+                                <input class="pos-element" type="text" name="full_name" placeholder="e.g. John Adigun"></p>
+                                
+                            <widget parameters=\'{ "class": "Application_Subscription_Cart" }\'></widget><br><p>
+                                Customer Phone Number: 
+                                <input class="pos-element" type="phone" name="phone_number" placeholder="e.g. 2348030001234"></p>
+                            <p>
+                                Customer Email: 
+                                <input class="pos-element" type="email" name="email" placeholder="e.g. email@example.com"></p>
+                            <widget parameters=\'{ "class": "Application_Subscription_Checkout_CheckoutOption" }\'><input style="vertical-align:middle;" checked id="checkoutoption_cash" type="radio" name="checkoutoption" value="Cash"><label style="margin: 0 5px; vertical-align:middle;" for="checkoutoption_cash">Cash</label>
+
+                                <!--{{{0}}}
+                                <span style="display:inline-block;">
+                                    <input style="vertical-align:middle;" id="checkoutoption_{{{checkoutoption_name}}}" type="radio" name="checkoutoption" value="{{{checkoutoption_name}}}" > 
+                                    <label style="margin: 0 5px; vertical-align:middle;" for="checkoutoption_{{{checkoutoption_name}}}">{{{checkoutoption_name}}}</label>
+                                </span>
+                                {{{0}}}-->
+                            </widget><script>
+                                var addProduct = function( article_url, article_title )
+                                {
+                                    let element = document.getElementById( "product-xy" );
+                                    if( ! element )
+                                    {
+                                        return false;
+                                    }
+                                    var option = document.createElement("option");
+                                    option.value = article_url;
+                                    option.text = article_title ? article_title : article_url;
+                                    element.add(option);
+
+                                    element.value = article_url;
+                                    element.onchange();
+                                }
+                                window.onload = function()
+                                {
+                                    $(".product-xy").select2(\'open\');
+                                }
+                            </script>
+</div>
+                        <div class="col-md-5">
+                            <div class="xy-round-border">
+                                
+                                    <div class="pos-element-text">Search Product: </div>
+                                    <widget parameters=\'{ 
+                                        "class": "Ayoola_Form_Element_Type_SelectTwo", 
+                                        "id": "product-xy", 
+                                        "name": "add_product", 
+                                        "config": { 
+                                            "ajax": { 
+                                                "url": "/widgets/Application_Article_Search?true_post_type=product", 
+                                                "delay": 500
+                                            }, 
+                                            "placeholder": "Search by item name, code or serial number", 
+                                            "minimumInputLength": 2,
+                                            "width": "100%"
+                                        },
+                                        "onchange": "document.forms.pos.submit()"
+
+                                    }\'><select id="{{{id}}}" class="{{{id}}}" name="{{{name}}}" onchange="{{{onchange}}}"><data-values><values-repeat><option value="{{{key}}}">{{{value}}}</option></values-repeat></data-values></select></widget><hr>
+<p>
+                                    MOST POPULAR ITEMS 
+                                </p>
+
+                                <div class="row" style="text-align: center;">
+                                    <widget parameters=\'{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "trending": 200, "add_a_new_post": 4, "no_of_post_to_show": 8 }\'><!--{{{0}}}
+                                        <div class="col-md-3">
+                                            <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}\'s photo">
+                                            </a>
+                                            <p>
+                                                <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                    {{{article_title}}}
+                                                </a>
+                                            </p>
+                                            
+                                        </div>
+                                        {{{0}}}--></widget>
+</div>
+                                <hr>
+<p>
+                                    RECENT ITEMS 
+                                </p>
+
+                                <div class="row" style="text-align: center;">
+                                    <widget parameters=\'{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "add_a_new_post": 4, "no_of_post_to_show": 8 }\'><!--{{{0}}}
+                                        <div class="col-md-3">
+                                            <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}\'s photo">
+                                            </a>
+                                            <p>
+                                                <a href="javascript:" onclick="addProduct( \'#{{{article_url}}}\', \'{{{article_title}}}\' )">
+                                                    {{{article_title}}}
+                                                </a>
+                                            </p>
+                                            
+                                        </div>
+                                        {{{0}}}--></widget>
+</div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="xy-round-border">
+                                <widget parameters=\'{ "class": "Ayoola_Access_Dashboard" }\'><div style="text-align: center;">
+                                        <img style="border-radius: 50%;" src="/widgets/Application_IconViewer/?url={{{display_picture}}}&amp;max_width=60&amp;max_height=60" alt="{{{firstname}}}\'s photo"><p>{{{firstname}}} {{{lastname}}}</p>
+                                        <p><a class="pos-link" href="#">Stock Balance</a></p>
+                                        <p><a class="pos-link" href="#">Today\'s sales</a></p>
+                                        <p><a class="pos-link" href="#">Change Profile</a></p>
+                                        <p><a class="pos-link" href="/accounts/signout?previous_url=/p">Close Shift</a></p>
+                                        <p><a class="pos-link" target="orders" href="#">Recent Orders</a></p>
+                                        <p><a class="pos-link" target="product" href="/widgets/Application_Article_Publisher">Add Item</a></p>
+                                    </div>
+                                </widget>
+</div>
+                            <button name="submit-button" class="pos-button pc-bg-color" type="submit" value="confirm">Confirm Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+',
+  'pagewidget_id' => NULL,
+) );
+
+							}
+							else
+							{
+								
+$_27bb1773dba6b8146e9ae38767bad53b = null;
+
+							}
+							

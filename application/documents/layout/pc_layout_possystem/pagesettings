@@ -1,0 +1,6 @@
+{
+    "/sales-center": {
+        "title": "Sales Center",
+        "auth_level": [ 52, 98, 99 ]
+    }
+}

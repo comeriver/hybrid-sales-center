@@ -1,0 +1,394 @@
+<?php
+/**
+* PageCarton Page Generator
+*
+* LICENSE
+*
+* @category PageCarton
+* @package /print
+* @generated Ayoola_Page_Editor_Layout
+* @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
+* @license    http://www.PageCarton.com/license.txt
+* @version $Id: print.php	Saturday 11th of December 2021 12:39:17 AM	ayoola@ayoo.la $ 
+*/
+//	Template Content ?>
+
+                    <?php 
+
+                            //	ADDED TO CHECK WITH CACHE_DIR TOO BECAUSE OF EDITING THEME PAGES
+                            //	THEY WON'T HAVE CORRECT APPDIR
+                        if
+                        ( 
+
+                            $x_1639183157 = Ayoola_Filter_LayoutIdToPath::getThemeIncludeFile( 'pc_layout_possystem', stripos( __FILE__, Ayoola_Application::getDomainSettings( APPLICATION_DIR ) ) !== false || stripos( __FILE__,CACHE_DIR ) !== false ? array( 'prioritize_my_copy' => true, 'multiple' => true,  ) : array( 'path_blacklist' => @array_pop( explode( PC_BASE, Ayoola_Application::getDomainSettings( APPLICATION_PATH ) ) ), 'multiple' => true ) ) 
+                        )
+                        {
+
+                            if( $x_1639183157 )
+                            foreach( $x_1639183157 as $each )
+                            {	
+                                include_once $each;
+                            }
+                        }
+
+                    ?>
+                     <?php
+/**
+* PageCarton Page Generator
+*
+* LICENSE
+*
+* @category PageCarton
+* @package /layout/pc_layout_possystem/template
+* @generated Ayoola_Page_Editor_Layout
+* @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
+* @license    http://www.PageCarton.com/license.txt
+* @version $Id: template.php	Friday 10th of December 2021 06:20:53 PM	ayoola@ayoo.la $ 
+*/
+//	Template Content ?>
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once( LAYOUT_PATH . DS . 'htmlHeader' . TPL ) ?>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="<?php echo Ayoola_Application::getUrlPrefix(); ?>/layout/pc_layout_possystem/main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+<link href="<?php echo Ayoola_Application::getUrlPrefix(); ?>/layout/pc_layout_possystem/" rel="stylesheet" type="text/css">
+
+</head>
+<body data-pc-section-name="body">
+<?php include_once( LAYOUT_PATH . DS . 'header' . TPL ) ?>
+        <!-- TODO: Here goes your content! -->
+        <div id="page-container" data-pc-section-autonamed="1" data-pc-section-name="pc-body-1">
+            
+<?php
+//pc_body_1 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_pc_body_1 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+echo ( ! empty( $_53dc3d23aa1e349e011a99960f4b904e ) &&  is_object( $_53dc3d23aa1e349e011a99960f4b904e ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_53dc3d23aa1e349e011a99960f4b904e->view(), '' ) : null );
+
+//pc_body_1 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//pc_body_1 /print Begins Here
+
+echo ( ! empty( $_f540abf9d51dcaed2e488242e0961f35 ) &&  is_object( $_f540abf9d51dcaed2e488242e0961f35 ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_f540abf9d51dcaed2e488242e0961f35->view(), '' ) : null );
+
+//pc_body_1 /print Ends Here
+?>
+
+
+<?php
+//oneness /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_oneness as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//oneness /layout/pc_layout_possystem/template Ends Here
+?><?php
+//oneness /print Begins Here
+
+//oneness /print Ends Here
+?><section data-pc-all-sections="1" class="container">	
+									<div class="">
+										<div class="row">
+											<div class="pc_page_layout_grid col-md-12 12u">
+												<?php
+//middlebar /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_middlebar as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//middlebar /layout/pc_layout_possystem/template Ends Here
+?><?php
+//middlebar /print Begins Here
+
+//middlebar /print Ends Here
+?>
+										   </div>
+										</div> 
+										<div class="row">
+											<div class="pc_page_layout_grid col-sm-6 6u 6u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//twosome1 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_twosome1 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//twosome1 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//twosome1 /print Begins Here
+
+//twosome1 /print Ends Here
+?>
+											</div>
+											<div class="pc_page_layout_grid col-sm-6 6u 6u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//twosome2 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_twosome2 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//twosome2 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//twosome2 /print Begins Here
+
+//twosome2 /print Ends Here
+?>
+											</div> 
+										</div> 
+										<div class="row">
+											<div class="pc_page_layout_grid col-sm-4 4u 12u$(medium) 12u$(xsmall) 12u$(mobile)"> 
+												<?php
+//threesome1 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_threesome1 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//threesome1 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//threesome1 /print Begins Here
+
+//threesome1 /print Ends Here
+?>
+										   </div>
+											<div class="pc_page_layout_grid col-sm-4 4u 12u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//threesome2 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_threesome2 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//threesome2 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//threesome2 /print Begins Here
+
+//threesome2 /print Ends Here
+?>
+											</div> 
+											<div class="pc_page_layout_grid col-sm-4 4u 12u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//threesome3 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_threesome3 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//threesome3 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//threesome3 /print Begins Here
+
+//threesome3 /print Ends Here
+?>
+											</div> 
+										</div> 
+										<div class="row">
+											<div class="pc_page_layout_grid col-sm-3 3u 6u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//foursome1 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_foursome1 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//foursome1 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//foursome1 /print Begins Here
+
+//foursome1 /print Ends Here
+?>
+										   </div>
+											<div class="pc_page_layout_grid col-sm-3 3u 6u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//foursome2 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_foursome2 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//foursome2 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//foursome2 /print Begins Here
+
+//foursome2 /print Ends Here
+?>
+											</div> 
+											<div class="pc_page_layout_grid col-sm-3 3u 6u(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//foursome3 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_foursome3 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//foursome3 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//foursome3 /print Begins Here
+
+//foursome3 /print Ends Here
+?>
+											</div> 
+											<div class="pc_page_layout_grid col-sm-3 3u 6u$(medium) 12u$(xsmall) 12u$(mobile)">    
+												<?php
+//foursome4 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_foursome4 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//foursome4 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//foursome4 /print Begins Here
+
+//foursome4 /print Ends Here
+?>
+											</div> 
+										</div> 
+										<div class="row">
+											<div class="pc_page_layout_grid col-sm-4 4u 12u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//leftbar /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_leftbar as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//leftbar /layout/pc_layout_possystem/template Ends Here
+?><?php
+//leftbar /print Begins Here
+
+//leftbar /print Ends Here
+?>
+										   </div>
+											<div class="pc_page_layout_grid col-sm-8 8u 12u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//leftbarright /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_leftbarright as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//leftbarright /layout/pc_layout_possystem/template Ends Here
+?><?php
+//leftbarright /print Begins Here
+
+//leftbarright /print Ends Here
+?>
+											</div> 
+										</div> 
+										<div class="row">
+											<div class="pc_page_layout_grid col-sm-8 8u 12u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//rightbarleft /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_rightbarleft as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//rightbarleft /layout/pc_layout_possystem/template Ends Here
+?><?php
+//rightbarleft /print Begins Here
+
+//rightbarleft /print Ends Here
+?>
+											</div> 
+											<div class="pc_page_layout_grid col-sm-4 4u 12u$(medium) 12u$(xsmall) 12u$(mobile)">
+												<?php
+//rightbar /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_rightbar as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//rightbar /layout/pc_layout_possystem/template Ends Here
+?><?php
+//rightbar /print Begins Here
+
+//rightbar /print Ends Here
+?>
+											</div>   
+										</div> 
+									</div> 
+								</section><?php
+//lastoneness /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_lastoneness as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//lastoneness /layout/pc_layout_possystem/template Ends Here
+?><?php
+//lastoneness /print Begins Here
+
+//lastoneness /print Ends Here
+?>
+
+            
+<?php
+//pc_body_2 /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_pc_body_2 as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+echo ( ! empty( $_dc450638350b1b93ed3c97db6686a474 ) &&  is_object( $_dc450638350b1b93ed3c97db6686a474 ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_dc450638350b1b93ed3c97db6686a474->view(), '' ) : null );
+
+//pc_body_2 /layout/pc_layout_possystem/template Ends Here
+?><?php
+//pc_body_2 /print Begins Here
+
+echo ( ! empty( $_d80079db96b50ee73454d6be69f8d059 ) &&  is_object( $_d80079db96b50ee73454d6be69f8d059 ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_d80079db96b50ee73454d6be69f8d059->view(), '' ) : null );
+
+//pc_body_2 /print Ends Here
+?>
+
+
+
+</div>
+	<?php include_once( LAYOUT_PATH . DS . 'footerJs' . TPL ) ?><?php include_once( LAYOUT_PATH . DS . 'footer' . TPL ) ?>
+<?php
+//pc_section_after_js /layout/pc_layout_possystem/template Begins Here
+
+                foreach( $_sitePageWidget_pc_section_after_js as $eachSitePageWidget )
+                {
+                    echo $eachSitePageWidget->view();
+                }
+                
+//pc_section_after_js /layout/pc_layout_possystem/template Ends Here
+?><?php
+//pc_section_after_js /print Begins Here
+
+//pc_section_after_js /print Ends Here
+?>
+
+</body>
+</html>
