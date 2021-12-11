@@ -1,0 +1,16 @@
+<div class="xy-round-border">
+    <widget parameters='{ "class": "Ayoola_Access_Dashboard" }'>
+        <div style="text-align: center;">
+            <img style="border-radius: 50%;" src="/widgets/Application_IconViewer/?url={{{display_picture}}}&max_width=60&max_height=60" alt="{{{firstname}}}'s photo">
+            <p>{{{firstname}}} {{{lastname}}}</p>
+            <p><a class="pos-link" href="/widgets/POS_Stock">Stock Balance</a></p>
+            <p><a class="pos-link" href="#">Today's sales</a></p>
+            <p><a class="pos-link" href="#">Change Profile</a></p>
+            <p><a class="pos-link" href="/accounts/signout">Close Shift</a></p>
+            <p><a class="pos-link" target="orders" href="#">Recent Orders</a></p>
+            <p><a class="pos-link" target="product" href="/widgets/Application_Article_Publisher">Add Item</a></p>
+        </div>
+    </widget>
+
+</div>
+<button name="submit-button" class="pos-button pc-bg-color" type="submit" value="confirm">Confirm Order</button>

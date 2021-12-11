@@ -1,0 +1,52 @@
+<p>
+    Customer Name: 
+    <input class="pos-element" type="text" name="full_name" placeholder="e.g. John Adigun" >
+</p>
+    
+<widget parameters='{ "class": "Application_Subscription_Cart" }'></widget>
+<br>
+<p>
+    Customer Phone Number: 
+    <input class="pos-element" type="phone" name="phone_number" placeholder="e.g. 2348030001234" >
+</p>
+<p>
+    Customer Email: 
+    <input class="pos-element" type="email" name="email" placeholder="e.g. email@example.com" >
+</p>
+<widget parameters='{ "class": "Application_Subscription_Checkout_CheckoutOption" }'>
+    <input style="vertical-align:middle;" checked id="checkoutoption_cash" type="radio" name="checkoutoption" value="Cash" > 
+    <label style="margin: 0 5px; vertical-align:middle;" for="checkoutoption_cash">Cash</label>
+
+    <!--{{{0}}}
+    <span style="display:inline-block;">
+        <input style="vertical-align:middle;" id="checkoutoption_{{{checkoutoption_name}}}" type="radio" name="checkoutoption" value="{{{checkoutoption_name}}}" > 
+        <label style="margin: 0 5px; vertical-align:middle;" for="checkoutoption_{{{checkoutoption_name}}}">{{{checkoutoption_name}}}</label>
+    </span>
+    {{{0}}}-->
+</widget>
+
+
+<script>
+    var addProduct = function( article_url, article_title )
+    {
+        let element = document.getElementById( "product-xy" );
+        if( ! element )
+        {
+            return false;
+        }
+        var option = document.createElement("option");
+        option.value = article_url;
+        option.text = article_title ? article_title : article_url;
+        element.add(option);
+
+        element.value = article_url;
+        element.onchange();
+    }
+    window.onload = function()
+    {
+        $(".product-xy").select2('open');
+    }
+</script>
+
+
+

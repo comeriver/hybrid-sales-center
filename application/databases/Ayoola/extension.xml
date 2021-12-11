@@ -21,12 +21,12 @@
       <TABLE_FIELD FIELD_KEY="extension_title"><![CDATA[Hybrid Sales Center]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="modules"><![CDATA[[&quot;\/POS.php&quot;,&quot;\/POS\/Checkout.php&quot;,&quot;\/POS\/Checkout\/Table.php&quot;,&quot;\/POS\/Checkout\/Table\/Abstract.php&quot;,&quot;\/POS\/Checkout\/Table\/Creator.php&quot;,&quot;\/POS\/Checkout\/Table\/Delete.php&quot;,&quot;\/POS\/Checkout\/Table\/Editor.php&quot;,&quot;\/POS\/Checkout\/Table\/List.php&quot;,&quot;\/POS\/Hook.php&quot;,&quot;\/POS\/Print.php&quot;,&quot;\/POS\/Stock.php&quot;,&quot;\/POS\/Stock\/Reducer.php&quot;,&quot;\/POS\/Stock\/Reducer\/Abstract.php&quot;,&quot;\/POS\/Stock\/Reducer\/Creator.php&quot;,&quot;\/POS\/Stock\/Reducer\/Delete.php&quot;,&quot;\/POS\/Stock\/Reducer\/Editor.php&quot;,&quot;\/POS\/Stock\/Reducer\/List.php&quot;,&quot;\/POS\/Stock\/Table.php&quot;,&quot;\/POS\/Stock\/Table\/Abstract.php&quot;,&quot;\/POS\/Stock\/Table\/Creator.php&quot;,&quot;\/POS\/Stock\/Table\/Delete.php&quot;,&quot;\/POS\/Stock\/Table\/Editor.php&quot;,&quot;\/POS\/Stock\/Table\/List.php&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="settings_class"><![CDATA[]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="databases"><![CDATA[[&quot;\/Ayoola\/Access\/authlevel.xml&quot;,&quot;\/Ayoola\/Form\/table.xml&quot;,&quot;\/Ayoola\/Page\/Menu\/option.xml&quot;,&quot;\/Ayoola\/Page\/pagelayout.xml&quot;,&quot;\/PageCarton\/hook.xml&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="documents"><![CDATA[[&quot;\/layout\/pc_layout_possystem\/main.css&quot;,&quot;\/layout\/pc_layout_possystem\/pagesettings&quot;,&quot;\/layout\/pc_layout_possystem\/sales-center.html&quot;,&quot;\/layout\/pc_layout_possystem\/template&quot;,&quot;\/layout\/pc_layout_possystem\/templateraw&quot;,&quot;\/layout\/pc_layout_possystem\/templatesections&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="pages"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="databases"><![CDATA[[&quot;\/Ayoola\/Access\/authlevel.xml&quot;,&quot;\/Ayoola\/Form\/table.xml&quot;,&quot;\/Ayoola\/Page\/Menu\/option.xml&quot;,&quot;\/Ayoola\/Page\/page.xml&quot;,&quot;\/Ayoola\/Page\/pagelayout.xml&quot;,&quot;\/PageCarton\/hook.xml&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="documents"><![CDATA[[&quot;\/layout\/pc_layout_possystem\/customer-info.html&quot;,&quot;\/layout\/pc_layout_possystem\/main.css&quot;,&quot;\/layout\/pc_layout_possystem\/pagesettings&quot;,&quot;\/layout\/pc_layout_possystem\/pos-options.html&quot;,&quot;\/layout\/pc_layout_possystem\/pos.html&quot;,&quot;\/layout\/pc_layout_possystem\/product-selection.html&quot;,&quot;\/layout\/pc_layout_possystem\/sales-center.html&quot;,&quot;\/layout\/pc_layout_possystem\/template&quot;,&quot;\/layout\/pc_layout_possystem\/templateraw&quot;,&quot;\/layout\/pc_layout_possystem\/templatesections&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="pages"><![CDATA[[&quot;\/app&quot;,&quot;\/sales-center&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="dependencies"><![CDATA[null]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[1639243139]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[{&quot;1639243139&quot;:1502904455.4154}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[1639255899]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[{&quot;1639255899&quot;:&quot;1639228158.9939&quot;}]]></TABLE_FIELD>
     </TABLE_ROW>
   </RECORDS>
   <TABLE_SETTINGS>

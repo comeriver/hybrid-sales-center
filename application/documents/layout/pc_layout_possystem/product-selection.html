@@ -1,0 +1,77 @@
+<div class="xy-round-border">
+                                
+    <div class="pos-element-text">Search Product: </div>
+    <widget parameters='{ 
+        "class": "Ayoola_Form_Element_Type_SelectTwo", 
+        "id": "product-xy", 
+        "name": "add_product", 
+        "config": { 
+            "ajax": { 
+                "url": "/widgets/Application_Article_Search?true_post_type=product", 
+                "delay": 500
+            }, 
+            "placeholder": "Search by item name, code or serial number", 
+            "minimumInputLength": 2,
+            "width": "100%"
+        },
+        "onchange": "document.forms.pos.submit()"
+
+    }'>
+        <select id="{{{id}}}" class="{{{id}}}" name="{{{name}}}" onchange="{{{onchange}}}">
+            <data-values>
+                <values-repeat>
+                    <option {{{selected}}} value="{{{key}}}">{{{value}}}</option>
+                </values-repeat>
+            </data-values>
+        </select>
+    </widget>
+
+
+<hr>
+
+<p>
+    MOST POPULAR ITEMS 
+</p>
+
+<div class="row" style="text-align: center;">
+    <widget parameters='{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "trending": 200, "add_a_new_post": 4, "no_of_post_to_show": 8 }'>
+        <!--{{{0}}}
+        <div class="col-md-3">
+            <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
+                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}'s photo">
+            </a>
+            <p>
+                <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
+                    {{{article_title}}}
+                </a>
+            </p>
+            
+        </div>
+        {{{0}}}-->
+    </widget>
+</div>
+<hr>
+
+<p>
+    RECENT ITEMS 
+</p>
+
+<div class="row" style="text-align: center;">
+    <widget parameters='{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "add_a_new_post": 4, "no_of_post_to_show": 8 }'>
+        <!--{{{0}}}
+        <div class="col-md-3">
+            <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
+                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}'s photo">
+            </a>
+            <p>
+                <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
+                    {{{article_title}}}
+                </a>
+            </p>
+            
+        </div>
+        {{{0}}}-->
+    </widget>
+</div>
+
+</div>
