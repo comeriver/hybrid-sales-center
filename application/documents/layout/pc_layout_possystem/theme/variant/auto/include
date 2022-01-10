@@ -9,52 +9,58 @@
 * @generated Ayoola_Page_Editor_Layout
 * @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
 * @license    http://www.PageCarton.com/license.txt
-* @version $Id: template.php	Friday 10th of December 2021 06:20:53 PM	ayoola@ayoo.la $ 
+* @version $Id: template.php	Monday 10th of January 2022 12:09:45 PM	ayoola.falola@yahoo.com $ 
 */
 //	Page Include Content
 
                 if( method_exists( 'Ayoola_Page_Editor_Layout', 'getSiteWideWidgets' ) )
                 {
-                    $_sitePageWidget_pc_body_1 = Ayoola_Page_Editor_Layout::getSiteWideWidgets( 'pc_body_1', Ayoola_Application::getPresentUri() );
+                    $_sitePageWidget_pc_body_2 = Ayoola_Page_Editor_Layout::getSiteWideWidgets( 'pc_body_2', Ayoola_Application::getPresentUri() );
                 }
                 else
                 {
-                    $_sitePageWidget_pc_body_1 = array();
+                    $_sitePageWidget_pc_body_2 = array();
                 }
                 
 							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
 							{
 								
-$_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
+$_dc450638350b1b93ed3c97db6686a474 = new Ayoola_Page_Editor_Text( array (
   '' => NULL,
-  'editable' => '
-<div id="content-wrap">
+  'editable' => '<div id="content-wrap">
                 <!-- all other page content -->
                 <div style="font-size: smaller;">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-pc-menu-ignore="1"><a class="navbar-brand" href="/"><img src="/img/logo.png" style="max-height: 30px;" alt="{Organization Name}"></a> 
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-pc-menu-ignore="1"> 
+                        <a class="navbar-brand" href="/"><img src="/img/logo.png" style="max-height: 30px;" alt="{Organization Name}"></a> 
                         <span class="navbar-text">
-                            
-                            <widget parameters=\'{ "class": "Application_SiteInfo" }\'><i class="fa fa-chevron-right">&nbsp;</i> 
+
+                            <widget parameters=\'{ "class": "Application_SiteInfo" }\'>
+                                <i class="fa fa-chevron-right">&nbsp;</i> 
                                 {{{site_headline}}}
-                            </widget></span>  
+                            </widget>
+                        </span>  
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon">&nbsp;</span>
                         </button>
-                      
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <form class="form-inline my-2 my-lg-0 ml-auto">
                             <div class="input-group rounded">
-                                <input style="width: 330px; max-width: 85%;" type="search" class="form-control rounded" placeholder="Search or type a command (Ctrl + G)" aria-label="Search" aria-describedby="search-addon"><span class="input-group-text border-0" id="search-addon">
+                                <input style="width: 330px; max-width: 85%;" type="search" class="form-control rounded" placeholder="Search or type a command (Ctrl + G)" aria-label="Search" aria-describedby="search-addon">
+                                <span class="input-group-text border-0" id="search-addon">
                                   <i class="fas fa-search">&nbsp;</i>
                                 </span>
                               </div>
                           </form>
 
                           <ul class="navbar-nav ml-auto">
-<!-- $options[] = array( \'option_name\' => $this->getParameter( \'edit_option_text\' ) ? : \'...\', \'rel\' => \'spotlight;\', \'url\' => \'/tools/classplayer/get/object_name/Ayoola_Page_Menu_Edit_List/menu_id/\' . $menu[\'menu_id\'] . \'/\', \'title\' => \'\' . self::__( \'Edit Menu Option\' ) . \'\', \'append_previous_url\' => 0, \'enabled\' => 1, \'auth_level\' => array( 99, 98 ), \'menu_id\' => $menu[\'menu_id\'], \'option_id\' => 0, \'link_options\' => array( \'spotlight\',\'logged_in\' ), );  --><widget parameters=\'{ "class": "Ayoola_Menu", "li-active-class": "active", "static_options": [{ "option_name": "Home", "url": "/", "auth_level": [0], "link_options": ["logged_in", "logged_out"]  }] }\'><li class="nav-item {{{li-active-class}}}">
+                            <!-- $options[] = array( \'option_name\' => $this->getParameter( \'edit_option_text\' ) ? : \'...\', \'rel\' => \'spotlight;\', \'url\' => \'/tools/classplayer/get/object_name/Ayoola_Page_Menu_Edit_List/menu_id/\' . $menu[\'menu_id\'] . \'/\', \'title\' => \'\' . self::__( \'Edit Menu Option\' ) . \'\', \'append_previous_url\' => 0, \'enabled\' => 1, \'auth_level\' => array( 99, 98 ), \'menu_id\' => $menu[\'menu_id\'], \'option_id\' => 0, \'link_options\' => array( \'spotlight\',\'logged_in\' ), );  -->
+                            <widget parameters=\'{ "class": "Ayoola_Menu", "li-active-class": "active", "static_options": [{ "option_name": "Home", "url": "/", "auth_level": [0], "link_options": ["logged_in", "logged_out"]  }] }\'>
+                                <li class="nav-item {{{li-active-class}}}">
                                     <a class="nav-link" href="{{{url}}}">{{{option_name}}}</a>
                                 </li>
-                            </widget><li class="nav-item dropdown">
+                            </widget>
+                            <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Options
                               </a>
@@ -71,16 +77,17 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
                             <li class="nav-item">
                                 <a class="nav-link" href="/widgets/Application_Notification_ShowAll"><i class="fa fa-bell">&nbsp;</i> </a>
                             </li>
-  
+
                           </ul>
-</div>
-                      </nav><div class="xy-container">
+                        </div>
+                      </nav>
+                    <div class="xy-container">
                         <div class="float-left">
                             <h2 class="inline-st" style="font-size: 20px; padding-right: 0.5em;">
                                 <widget parameters=\'{ "class": "Ayoola_Page_Info" }\'>
                                     {{{title}}}
-                                </widget>
-</h2> <span class="dot">&nbsp;</span> Online
+                                </widget>    
+                            </h2> <span class="dot">&nbsp;</span> Online
                         </div>
                         <div class="float-right">
                             <div class="dropdown show">
@@ -88,9 +95,10 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
                                    Menu
                                   </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <widget parameters=\'{ "class": "Ayoola_Menu", "menu_name": "pos-options" }\'><a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
+                                    <widget parameters=\'{ "class": "Ayoola_Menu", "menu_name": "pos-options" }\'>
+                                        <a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
                                     </widget>
-</div>
+                                </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -98,39 +106,44 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
                 </div>
 
             </div>
-
 ',
   'includes' => 
   array (
   ),
-  'content' => '
-<div id="content-wrap">
+  'content' => '<div id="content-wrap">
                 <!-- all other page content -->
                 <div style="font-size: smaller;">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-pc-menu-ignore="1"><a class="navbar-brand" href="/"><img src="/img/logo.png" style="max-height: 30px;" alt="{Organization Name}"></a> 
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-pc-menu-ignore="1"> 
+                        <a class="navbar-brand" href="/"><img src="/img/logo.png" style="max-height: 30px;" alt="{Organization Name}"></a> 
                         <span class="navbar-text">
-                            
-                            <widget parameters=\'{ "class": "Application_SiteInfo" }\'><i class="fa fa-chevron-right"i></i> 
+
+                            <widget parameters=\'{ "class": "Application_SiteInfo" }\'>
+                                <i class="fa fa-chevron-right"i></i> 
                                 {{{site_headline}}}
-                            </widget></span>  
+                            </widget>
+                        </span>  
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
-                      
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <form class="form-inline my-2 my-lg-0 ml-auto">
                             <div class="input-group rounded">
-                                <input style="width: 330px; max-width: 85%;" type="search" class="form-control rounded" placeholder="Search or type a command (Ctrl + G)" aria-label="Search" aria-describedby="search-addon"><span class="input-group-text border-0" id="search-addon">
+                                <input style="width: 330px; max-width: 85%;" type="search" class="form-control rounded" placeholder="Search or type a command (Ctrl + G)" aria-label="Search" aria-describedby="search-addon">
+                                <span class="input-group-text border-0" id="search-addon">
                                   <i class="fas fa-search"i></i>
                                 </span>
                               </div>
                           </form>
 
                           <ul class="navbar-nav ml-auto">
-<!-- $options[] = array( \'option_name\' => $this->getParameter( \'edit_option_text\' ) ? : \'...\', \'rel\' => \'spotlight;\', \'url\' => \'/tools/classplayer/get/object_name/Ayoola_Page_Menu_Edit_List/menu_id/\' . $menu[\'menu_id\'] . \'/\', \'title\' => \'\' . self::__( \'Edit Menu Option\' ) . \'\', \'append_previous_url\' => 0, \'enabled\' => 1, \'auth_level\' => array( 99, 98 ), \'menu_id\' => $menu[\'menu_id\'], \'option_id\' => 0, \'link_options\' => array( \'spotlight\',\'logged_in\' ), );  --><widget parameters=\'{ "class": "Ayoola_Menu", "li-active-class": "active", "static_options": [{ "option_name": "Home", "url": "/", "auth_level": [0], "link_options": ["logged_in", "logged_out"]  }] }\'><li class="nav-item {{{li-active-class}}}">
+                            <!-- $options[] = array( \'option_name\' => $this->getParameter( \'edit_option_text\' ) ? : \'...\', \'rel\' => \'spotlight;\', \'url\' => \'/tools/classplayer/get/object_name/Ayoola_Page_Menu_Edit_List/menu_id/\' . $menu[\'menu_id\'] . \'/\', \'title\' => \'\' . self::__( \'Edit Menu Option\' ) . \'\', \'append_previous_url\' => 0, \'enabled\' => 1, \'auth_level\' => array( 99, 98 ), \'menu_id\' => $menu[\'menu_id\'], \'option_id\' => 0, \'link_options\' => array( \'spotlight\',\'logged_in\' ), );  -->
+                            <widget parameters=\'{ "class": "Ayoola_Menu", "li-active-class": "active", "static_options": [{ "option_name": "Home", "url": "/", "auth_level": [0], "link_options": ["logged_in", "logged_out"]  }] }\'>
+                                <li class="nav-item {{{li-active-class}}}">
                                     <a class="nav-link" href="{{{url}}}">{{{option_name}}}</a>
                                 </li>
-                            </widget><li class="nav-item dropdown">
+                            </widget>
+                            <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Options
                               </a>
@@ -147,16 +160,17 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
                             <li class="nav-item">
                                 <a class="nav-link" href="/widgets/Application_Notification_ShowAll"><i class="fa fa-bell"i></i> </a>
                             </li>
-  
+
                           </ul>
-</div>
-                      </nav><div class="xy-container">
+                        </div>
+                      </nav>
+                    <div class="xy-container">
                         <div class="float-left">
                             <h2 class="inline-st" style="font-size: 20px; padding-right: 0.5em;">
                                 <widget parameters=\'{ "class": "Ayoola_Page_Info" }\'>
                                     {{{title}}}
-                                </widget>
-</h2> <span class="dot"></span> Online
+                                </widget>    
+                            </h2> <span class="dot"></span> Online
                         </div>
                         <div class="float-right">
                             <div class="dropdown show">
@@ -164,9 +178,10 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
                                    Menu
                                   </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <widget parameters=\'{ "class": "Ayoola_Menu", "menu_name": "pos-options" }\'><a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
+                                    <widget parameters=\'{ "class": "Ayoola_Menu", "menu_name": "pos-options" }\'>
+                                        <a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
                                     </widget>
-</div>
+                                </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -174,7 +189,6 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
                 </div>
 
             </div>
-
 ',
   'pagewidget_id' => NULL,
 ) );
@@ -183,7 +197,7 @@ $_53dc3d23aa1e349e011a99960f4b904e = new Ayoola_Page_Editor_Text( array (
 							else
 							{
 								
-$_53dc3d23aa1e349e011a99960f4b904e = null;
+$_dc450638350b1b93ed3c97db6686a474 = null;
 
 							}
 							
@@ -333,31 +347,27 @@ $_53dc3d23aa1e349e011a99960f4b904e = null;
                 
                 if( method_exists( 'Ayoola_Page_Editor_Layout', 'getSiteWideWidgets' ) )
                 {
-                    $_sitePageWidget_pc_body_2 = Ayoola_Page_Editor_Layout::getSiteWideWidgets( 'pc_body_2', Ayoola_Application::getPresentUri() );
+                    $_sitePageWidget_pc_body_3 = Ayoola_Page_Editor_Layout::getSiteWideWidgets( 'pc_body_3', Ayoola_Application::getPresentUri() );
                 }
                 else
                 {
-                    $_sitePageWidget_pc_body_2 = array();
+                    $_sitePageWidget_pc_body_3 = array();
                 }
                 
 							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
 							{
 								
-$_dc450638350b1b93ed3c97db6686a474 = new Ayoola_Page_Editor_Text( array (
+$_87f0237f9baf04444d8ba7c60f39cf29 = new Ayoola_Page_Editor_Text( array (
   '' => NULL,
-  'editable' => '
-<footer id="footer" class="bg-light">
+  'editable' => '<footer id="footer" class="bg-light">
                &copy; 2021 {Organization Name} | Made by <a href="https://www.comeriver.com">Comeriver LTD</a> | Powered by <a href="https://www.pagecarton.org">PageCarton</a> 
-            </footer>
-',
+            </footer>',
   'includes' => 
   array (
   ),
-  'content' => '
-<footer id="footer" class="bg-light">
+  'content' => '<footer id="footer" class="bg-light">
                &copy; 2021 {Organization Name} | Made by <a href="https://www.comeriver.com">Comeriver LTD</a> | Powered by <a href="https://www.pagecarton.org">PageCarton</a> 
-            </footer>
-',
+            </footer>',
   'pagewidget_id' => NULL,
 ) );
 
@@ -365,7 +375,7 @@ $_dc450638350b1b93ed3c97db6686a474 = new Ayoola_Page_Editor_Text( array (
 							else
 							{
 								
-$_dc450638350b1b93ed3c97db6686a474 = null;
+$_87f0237f9baf04444d8ba7c60f39cf29 = null;
 
 							}
 							

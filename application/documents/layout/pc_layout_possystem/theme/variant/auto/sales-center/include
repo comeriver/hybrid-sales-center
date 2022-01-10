@@ -9,30 +9,29 @@
 * @generated Ayoola_Page_Editor_Layout
 * @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
 * @license    http://www.PageCarton.com/license.txt
-* @version $Id: sales-center.php	Saturday 11th of December 2021 08:10:55 PM	ayoola.falola@yahoo.com $ 
+* @version $Id: sales-center.php	Monday 10th of January 2022 12:09:54 PM	ayoola.falola@yahoo.com $ 
 */
 //	Page Include Content
 
 							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
 							{
 								
-$_aca0c54c31f0763108a62e561d49a6c0 = new Ayoola_Page_Editor_Text( array (
+$_0ac4d5c3c3112b87214d56d8db5e0720 = new Ayoola_Page_Editor_Text( array (
   '' => NULL,
-  'editable' => '
-<div class="x-content">
-                <include href="/pos/layout/pc_layout_possystem/pos.html"></include>
+  'editable' => '<div class="x-content">
+                <include href="/layout/pc_layout_possystem/pos.html">
+            </include>
 </div>
-
 ',
   'includes' => 
   array (
-    '/layout/pc_layout_possystem/pos' => '<include href="/layout/pc_layout_possystem/pos.html"></include>',
+    '/layout/pc_layout_possystem/pos' => '<include href="/layout/pc_layout_possystem/pos.html">
+            </include>',
   ),
-  'content' => '
-<div class="x-content">
-                <include href="/layout/pc_layout_possystem/pos.html"></include>
+  'content' => '<div class="x-content">
+                <include href="/layout/pc_layout_possystem/pos.html">
+            </include>
 </div>
-
 ',
   'pagewidget_id' => NULL,
 ) );
@@ -41,7 +40,7 @@ $_aca0c54c31f0763108a62e561d49a6c0 = new Ayoola_Page_Editor_Text( array (
 							else
 							{
 								
-$_aca0c54c31f0763108a62e561d49a6c0 = null;
+$_0ac4d5c3c3112b87214d56d8db5e0720 = null;
 
 							}
 							

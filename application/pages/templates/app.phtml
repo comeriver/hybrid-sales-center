@@ -9,7 +9,7 @@
 * @generated Ayoola_Page_Editor_Layout
 * @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
 * @license    http://www.PageCarton.com/license.txt
-* @version $Id: app.php	Saturday 11th of December 2021 08:49:10 PM	ayoola.falola@yahoo.com $ 
+* @version $Id: app.php	Monday 10th of January 2022 12:09:53 PM	ayoola.falola@yahoo.com $ 
 */
 //	Template Content ?>
 
@@ -20,12 +20,12 @@
                         if
                         ( 
 
-                            $x_1639255750 = Ayoola_Filter_LayoutIdToPath::getThemeIncludeFile( 'pc_layout_possystem', stripos( __FILE__, Ayoola_Application::getDomainSettings( APPLICATION_DIR ) ) !== false || stripos( __FILE__,CACHE_DIR ) !== false ? array( 'prioritize_my_copy' => true, 'multiple' => true,  ) : array( 'path_blacklist' => @array_pop( explode( PC_BASE, Ayoola_Application::getDomainSettings( APPLICATION_PATH ) ) ), 'multiple' => true ) ) 
+                            $x_1641816593 = Ayoola_Filter_LayoutIdToPath::getThemeIncludeFile( 'pc_layout_possystem', stripos( __FILE__, Ayoola_Application::getDomainSettings( APPLICATION_DIR ) ) !== false || stripos( __FILE__,CACHE_DIR ) !== false ? array( 'prioritize_my_copy' => true, 'multiple' => true,  ) : array( 'path_blacklist' => @array_pop( explode( PC_BASE, Ayoola_Application::getDomainSettings( APPLICATION_PATH ) ) ), 'multiple' => true ) ) 
                         )
                         {
 
-                            if( $x_1639255750 )
-                            foreach( $x_1639255750 as $each )
+                            if( $x_1641816593 )
+                            foreach( $x_1641816593 as $each )
                             {	
                                 include_once $each;
                             }
@@ -43,44 +43,44 @@
 * @generated Ayoola_Page_Editor_Layout
 * @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
 * @license    http://www.PageCarton.com/license.txt
-* @version $Id: template.php	Friday 10th of December 2021 06:20:53 PM	ayoola@ayoo.la $ 
+* @version $Id: template.php	Monday 10th of January 2022 12:09:45 PM	ayoola.falola@yahoo.com $ 
 */
 //	Template Content ?>
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 <?php include_once( LAYOUT_PATH . DS . 'htmlHeader' . TPL ) ?>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><link rel="stylesheet" type="text/css" href="<?php echo Ayoola_Application::getUrlPrefix(); ?>/layout/pc_layout_possystem/main.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-</head>
-<body data-pc-section-name="body">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="<?php echo Ayoola_Application::getUrlPrefix(); ?>/layout/pc_layout_possystem/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+	</head>
+	<body data-pc-section-name="body">
 <?php include_once( LAYOUT_PATH . DS . 'header' . TPL ) ?>
         <!-- TODO: Here goes your content! -->
         <div id="page-container" data-pc-section-autonamed="1" data-pc-section-name="pc-body-1">
-            
-<?php
-//pc_body_1 /layout/pc_layout_possystem/template Begins Here
+            <?php
+//pc_body_2 /layout/pc_layout_possystem/template Begins Here
 
-                foreach( $_sitePageWidget_pc_body_1 as $eachSitePageWidget )
+                foreach( $_sitePageWidget_pc_body_2 as $eachSitePageWidget )
                 {
                     echo $eachSitePageWidget->view();
                 }
                 
-echo ( ! empty( $_53dc3d23aa1e349e011a99960f4b904e ) &&  is_object( $_53dc3d23aa1e349e011a99960f4b904e ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_53dc3d23aa1e349e011a99960f4b904e->view(), '' ) : null );
+echo ( ! empty( $_dc450638350b1b93ed3c97db6686a474 ) &&  is_object( $_dc450638350b1b93ed3c97db6686a474 ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_dc450638350b1b93ed3c97db6686a474->view(), '' ) : null );
 
-//pc_body_1 /layout/pc_layout_possystem/template Ends Here
+//pc_body_2 /layout/pc_layout_possystem/template Ends Here
 ?><?php
-//pc_body_1 /app Begins Here
+//pc_body_2 /app Begins Here
 
-//pc_body_1 /app Ends Here
-?>
-
-
-<?php
+//pc_body_2 /app Ends Here
+?><?php
 //oneness /layout/pc_layout_possystem/template Begins Here
 
                 foreach( $_sitePageWidget_oneness as $eachSitePageWidget )
@@ -334,7 +334,7 @@ echo ( ! empty( $_a3160f44bdc7b6862bc39413b23cc75e ) &&  is_object( $_a3160f44bd
 											</div>   
 										</div> 
 									</div> 
-								</section><?php
+									</section><?php
 //lastoneness /layout/pc_layout_possystem/template Begins Here
 
                 foreach( $_sitePageWidget_lastoneness as $eachSitePageWidget )
@@ -349,29 +349,25 @@ echo ( ! empty( $_a3160f44bdc7b6862bc39413b23cc75e ) &&  is_object( $_a3160f44bd
 //lastoneness /app Ends Here
 ?>
 
-            
-<?php
-//pc_body_2 /layout/pc_layout_possystem/template Begins Here
+            <?php
+//pc_body_3 /layout/pc_layout_possystem/template Begins Here
 
-                foreach( $_sitePageWidget_pc_body_2 as $eachSitePageWidget )
+                foreach( $_sitePageWidget_pc_body_3 as $eachSitePageWidget )
                 {
                     echo $eachSitePageWidget->view();
                 }
                 
-echo ( ! empty( $_dc450638350b1b93ed3c97db6686a474 ) &&  is_object( $_dc450638350b1b93ed3c97db6686a474 ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_dc450638350b1b93ed3c97db6686a474->view(), '' ) : null );
+echo ( ! empty( $_87f0237f9baf04444d8ba7c60f39cf29 ) &&  is_object( $_87f0237f9baf04444d8ba7c60f39cf29 ) ? Ayoola_Object_Wrapper_Abstract::wrap( $_87f0237f9baf04444d8ba7c60f39cf29->view(), '' ) : null );
 
-//pc_body_2 /layout/pc_layout_possystem/template Ends Here
+//pc_body_3 /layout/pc_layout_possystem/template Ends Here
 ?><?php
-//pc_body_2 /app Begins Here
+//pc_body_3 /app Begins Here
 
-//pc_body_2 /app Ends Here
+//pc_body_3 /app Ends Here
 ?>
 
-
-
-</div>
-	<?php include_once( LAYOUT_PATH . DS . 'footerJs' . TPL ) ?><?php include_once( LAYOUT_PATH . DS . 'footer' . TPL ) ?>
-<?php
+          </div>
+	<?php include_once( LAYOUT_PATH . DS . 'footerJs' . TPL ) ?><?php include_once( LAYOUT_PATH . DS . 'footer' . TPL ) ?><?php
 //pc_section_after_js /layout/pc_layout_possystem/template Begins Here
 
                 foreach( $_sitePageWidget_pc_section_after_js as $eachSitePageWidget )
@@ -385,6 +381,5 @@ echo ( ! empty( $_dc450638350b1b93ed3c97db6686a474 ) &&  is_object( $_dc45063835
 
 //pc_section_after_js /app Ends Here
 ?>
-
 </body>
 </html>

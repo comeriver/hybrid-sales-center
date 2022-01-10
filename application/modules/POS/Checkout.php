@@ -44,11 +44,11 @@ class POS_Checkout extends POS
         }
         elseif( empty( $_REQUEST['checkoutoption'] ) )
         {
-            return $this->setViewContent(  '' . self::__( '<div class="badnews pos-element">Please select a checkout method</div>' ) . '', true  );
+            return $this->setViewContent(  '' . self::__( '<div class="badnews pos-element-text">Please select a checkout method</div>' ) . '', true  );
         }
         elseif( ! $cart = Application_Subscription_Checkout::getStorage()->retrieve() )
         { 
-            return $this->setViewContent(  '' . self::__( '<div class="badnews pos-element">Add items to the shopping cart first.</div>' ) . '', true  );
+            return $this->setViewContent(  '' . self::__( '<div class="badnews pos-element-text">Add items to the shopping cart first.</div>' ) . '', true  );
         }
 
         $cart['checkout_info'] = $_REQUEST;
@@ -67,7 +67,7 @@ class POS_Checkout extends POS
            }
         </script>';
         $this->setViewContent( $html );
-        $this->setViewContent( '<div class="goodnews pos-element">' . self::__( 'Checkout Complete. <a onclick="printPage();" href="javascript:">Print Receipt!</a>' . '</div>' ) );
+        $this->setViewContent( '<div class="goodnews pos-element-text">' . self::__( 'Checkout Complete. <a onclick="printPage();" href="javascript:">Print Receipt!</a>' . '</div>' ) );
 
         //  reduce from stock?
         //  will do it now through call back
