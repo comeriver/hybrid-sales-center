@@ -33,45 +33,79 @@
     MOST POPULAR ITEMS 
 </p>
 
-<div class="row" style="text-align: center;">
-    <widget parameters='{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "trending": 200, "add_a_new_post": 4, "no_of_post_to_show": 8 }'>
-        <!--{{{0}}}
-        <div class="col-md-3">
-            <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}'s photo">
-            </a>
-            <p>
+    <div class="row" style="text-align: center;">
+        <widget parameters='{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "trending": 200, "add_a_new_post": 4, "no_of_post_to_show": 8, "markup_template_data_filters": { 
+            "article_title": ["htmlentities"] 
+        } 
+        }'>
+            <!--{{{0}}}
+            <div class="col-md-3">
                 <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                    {{{article_title}}}
+                    <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}'s photo">
                 </a>
-            </p>
-            
-        </div>
-        {{{0}}}-->
-    </widget>
-</div>
-<hr>
+                <p>
+                    <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )"> 
+                        {{{article_title}}}
+                    </a>
+                </p>
+                
+            </div>
+            {{{0}}}-->
+        </widget>
+    </div>
+    <hr>
 
-<p>
-    RECENT ITEMS 
-</p>
+    <p>
+        RECENT ITEMS 
+    </p>
 
-<div class="row" style="text-align: center;">
-    <widget parameters='{ "class": "Application_Article_ShowAll", "true_post_type": "product", "length_of_title": 30, "add_a_new_post": 4, "no_of_post_to_show": 8 }'>
-        <!--{{{0}}}
-        <div class="col-md-3">
-            <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}'s photo">
-            </a>
-            <p>
+    <div class="row" style="text-align: center;">
+        <widget parameters='{ 
+            "class": "Application_Article_ShowAll", 
+            "true_post_type": "product", 
+            "length_of_title": 30, 
+            "add_a_new_post": 4, 
+            "no_of_post_to_show": 8, 
+            "markup_template_data_filters": { 
+                "article_title": ["htmlentities"] 
+            } 
+        }'>
+            <!--{{{0}}}
+            <div class="col-md-3">
                 <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                    {{{article_title}}}
+                    <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=60&height=60" alt="{{{article_title}}}'s photo">
                 </a>
-            </p>
-            
-        </div>
-        {{{0}}}-->
-    </widget>
-</div>
+                <p>
+                    <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
+                        {{{article_title}}}
+                    </a>
+                </p>
+                
+            </div>
+            {{{0}}}-->
+        </widget>
+    </div>
 
 </div>
+<script>
+    var addProduct = function( article_url, article_title )
+    {
+        let element = document.getElementById( "product-xy" );
+        if( ! element )
+        {
+            return false;
+        }
+        var option = document.createElement("option");
+        option.value = article_url;
+        option.text = article_title ? article_title : article_url;
+        element.add(option);
+
+        element.value = article_url;
+        element.onchange();
+    }
+    window.onload = function()
+    {
+        $(".product-xy").select2('open'); 
+    }
+</script>
+

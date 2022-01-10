@@ -24,29 +24,3 @@
     </span>
     {{{0}}}-->
 </widget>
-
-
-<script>
-    var addProduct = function( article_url, article_title )
-    {
-        let element = document.getElementById( "product-xy" );
-        if( ! element )
-        {
-            return false;
-        }
-        var option = document.createElement("option");
-        option.value = article_url;
-        option.text = article_title ? article_title : article_url;
-        element.add(option);
-
-        element.value = article_url;
-        element.onchange();
-    }
-    window.onload = function()
-    {
-        $(".product-xy").select2('open');
-    }
-</script>
-
-
-
