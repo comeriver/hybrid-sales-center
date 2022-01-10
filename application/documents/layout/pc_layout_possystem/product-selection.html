@@ -34,19 +34,23 @@
 </p>
 
     <div class="row" style="text-align: center;">
-        <widget parameters='{ 
-            "class": "Application_Article_ShowAll", 
-            "true_post_type": "product", 
-            "length_of_title": 30, 
-            "trending": 200, 
-            "add_a_new_post": 4, 
-            "no_of_post_to_show": 8, 
-            "markup_template_data_filters": { 
-                "article_title": {
-                    "htmlentities": [3]
+        <widget>
+            <script type="application/json">
+                { 
+                    "class": "Application_Article_ShowAll", 
+                    "true_post_type": "product", 
+                    "length_of_title": 30, 
+                    "trending": 200, 
+                    "add_a_new_post": 4, 
+                    "no_of_post_to_show": 8, 
+                    "markup_template_data_filters": { 
+                        "article_title": {
+                            "addcslashes": ["'"]
+                        }
+                    } 
                 }
-            } 
-        }'>
+            </script>
+
             <!--{{{0}}}
             <div class="col-md-3">
                 <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
@@ -69,18 +73,21 @@
     </p>
 
     <div class="row" style="text-align: center;">
-        <widget parameters='{ 
-            "class": "Application_Article_ShowAll", 
-            "true_post_type": "product", 
-            "length_of_title": 30, 
-            "add_a_new_post": 4, 
-            "no_of_post_to_show": 8, 
-            "markup_template_data_filters": { 
-                "article_title": {
-                    "htmlentities": [3]
+        <widget>
+            <script type="application/json">
+                { 
+                    "class": "Application_Article_ShowAll", 
+                    "true_post_type": "product", 
+                    "length_of_title": 30, 
+                    "add_a_new_post": 4, 
+                    "no_of_post_to_show": 8, 
+                    "markup_template_data_filters": { 
+                        "article_title": {
+                            "addcslashes": ["'"]
+                        }
+                    } 
                 }
-            } 
-        }'>
+            </script>
             <!--{{{0}}}
             <div class="col-md-3">
                 <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
