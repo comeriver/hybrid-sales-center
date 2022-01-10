@@ -26,7 +26,6 @@ application/databases/*/__/*/extensions/
 application/databases/*/*/__/dbase/extensions/project_manager.xml
 application/databases/*/*/__/*/extensions/project_manager.xml
 application/databases/*/*/*/__/*/extensions/project_manager.xml
-application/databases/Ayoola/Page/page.xml
 application/pages/data-backup/
 extensions/
 application/pages/*/*managed-project*.*
