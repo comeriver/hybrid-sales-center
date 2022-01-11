@@ -51,6 +51,7 @@ class POS_Print extends POS
             Address: {Street Address}, {City}, {State}, {Country}</br>
             Email: {info@example.com}</br>
             Phone: {+234 800 000 0000}</br>
+            ' . Ayoola_Page::getHomePageUrl() . '</br>
         </p>';
         Ayoola_Page_Editor_Text::doTextUpdate( $content );
 
@@ -64,17 +65,24 @@ class POS_Print extends POS
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <title>Order Number: ' . $_REQUEST['order_number'] . '</title>
                 <link rel="stylesheet" href="' . Ayoola_Application::getUrlPrefix() . '/layout/pc_layout_possystem/main.css" >
-            
+                <style>
+                    body {
+                        font-size:10px;
+                        font-family:Calibri;
+                        padding:5px;
+                    }
+                </style>
             </head>
         <body class="pos-print-page">
             ' . $content . '
 
-            <p style="text-align:center;">Order Number: <strong>' . $_REQUEST['order_number'] . '</strong></p>
+            <p style="text-align:center;">Order Number: <br><strong>' . $_REQUEST['order_number'] . '</strong></p>
             ' . Application_Subscription_Cart::viewInLine( array( 'cart' => $setOrderInfo['order'] ) ) . '
             <br>
             <p style="text-align:center;">' . ( Application_Settings_Abstract::getSettings( 'Payments', 'order_confirmation_message' ) ? : "You can keep this print for your records. Your order number is a unique identifier that should be mentioned when referencing this order." ) . '</p>
+            <p style="text-align:center;"><hr><br><br></p>
             <script type="text/javascript">
-                window.onload = function() { window.print(); }
+                //window.onload = function() { window.print(); }
             </script>
         </body>
         </html>
