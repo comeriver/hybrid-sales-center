@@ -70,12 +70,22 @@
                         </div>
                       </nav>
                     <div class="xy-container">
-                        <div class="float-left">
+                        <div class="float-left" style="max-width: 80%;">
                             <h2 class="inline-st" style="font-size: 20px; padding-right: 0.5em;">
                                 <widget parameters='{ "class": "Ayoola_Page_Info" }'>
                                     {{{title}}}
                                 </widget>    
-                            </h2> <span class="dot"></span> Online
+                            </h2> 
+                            <span style="margin-right: 2em;"><span class="dot"></span> Online </span>
+                            
+
+                            <widget parameters='{ "class": "Application_Subscription_Cart" }'>
+                              <span style="display: inline-block;"><a href="/cart"><i styleclass="fa fa-shopping-cart"></i>  {{{no_of_items}}} Items ({{{currency}}}{{{total_price}}})</a></span> 
+                            </widget>
+
+                            
+                            
+                            
                         </div>
                         <div class="float-right">
                             <div class="dropdown show">
