@@ -83,7 +83,7 @@
                                    Menu
                                   </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <widget parameters='{ "class": "Ayoola_Menu", "menu_name": "pos-options" }'>
+                                    <widget parameters='{ "class": "Ayoola_Menu", "menu_name": "posoptions" }'>
                                         <a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
                                     </widget>
                                 </div>
