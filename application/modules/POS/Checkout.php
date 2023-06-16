@@ -38,9 +38,9 @@ class POS_Checkout extends POS
         {
             if( ! empty( $_REQUEST['add_product'] ) AND $product = Application_Article_Abstract::loadPostData( trim( $_REQUEST['add_product'], '#' ) ) )
             {
-                var_export( $product );
                 Application_Article_Type_Subscription::subscribe( $product );
-                return $this->setViewContent(  '' . self::__( '<div class="badnews pos-element-text">' . $product['article_title'] .   ' added to the shopping cart. </div>' ) . '', true  );
+
+                return $this->setViewContent(  '' . self::__( '<div class="goodnews pos-element-text">' . $product['article_title'] .   ' added to the shopping cart. <a href="/cart">Checkout and Complete Purchase</a> or continue shopping</div>' ) . '', true  );
 
             }
             return false;
