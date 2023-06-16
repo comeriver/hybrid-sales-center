@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+</head>
+
+<body data-pc-section-name="body">
+    <!-- TODO: Here goes your content! -->
+    <div id="page-container" data-pc-section-autonamed="1" data-pc-section-name="pc-body-1">
+        <section class="pc-element-with-no-space" data-pc-section-placeholder="pc_body_2">
+            <!-- DO NOT REMOVE THIS SECTION --></section>
+
+        <div class="x-content">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <widget parameters='{ "class": "POS_Checkout" }'></widget>
+                    </div>
+                    <div class="col-md-9">
+                        <form method="post" name="pos">
+                        <include href="product-selection.html">
+                        </form>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Your cart</h3>
+                        <widget parameters='{ "class": "Application_Subscription_Cart" }'></widget>
+                        <h3>Checkout</h3>
+                        <widget parameters='{ "class": "Application_Subscription_Checkout" }'></widget>
+                    </div>
+                </div>
+           
+            
+        </div>
+
+
+        <section class="pc-element-with-no-space" data-pc-section-placeholder="pc_body_4">
+            <!-- DO NOT REMOVE THIS SECTION --></section>
+
+    </div>
+</body>
+
+</html>
