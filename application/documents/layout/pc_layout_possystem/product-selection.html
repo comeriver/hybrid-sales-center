@@ -28,7 +28,28 @@
 
 
 <hr>
-
+<style>
+    .csx-buttons
+    {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
+        display: none;
+    }
+    .csx-product:hover .csx-buttons
+    {
+        display: block;
+    }
+    .csx-product img.csx-image
+    {
+        border: 5px solid #eee;
+        border-radius: 50%;
+    }
+    
+</style>
 <p>
     MOST POPULAR ITEMS 
 </p>
@@ -54,16 +75,19 @@
             </script>
 
             <!--{{{0}}}
-            <div class="col-md-3">
-                <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                    <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=90&height=90" alt="{{{article_title}}}'s photo">
+            <div class="col-md-3 csx-product">
+                <a href="javascript:" data-href="{{{article_url}}}" onclick="if(this.href.includes(this.dataset.href)){ return true; } this.href=this.dataset.href;  return false;">
+                    <img class="csx-image"  height="90" width="90" src="{{{document_url_uri}}}?width=90&height=90" alt="{{{article_title}}}'s photo">
                 </a>
-                <p>
-                    <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )"> 
-                        {{{article_title}}} - <s> {{{item_old_price}}} </s>{{{item_price_with_currency}}}
-                    </a>
+                <p class="csx-buttons">
+                    <a class="btn btn-info btn-sm" href="{{{article_url}}}">Details</a>
+                    <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )" class="btn btn-primary btn-sm">Add to Cart</a>
                 </p>
-                
+                <p>
+                    <a href="javascript:" data-href="{{{article_url}}}" onclick="if(this.href.includes(this.dataset.href)){ return true; } this.href=this.dataset.href;  return false;"> 
+                        {{{article_title}}} 
+                    </a> <br><span style="display:inline-block;"><s> {{{item_old_price}}} </s> {{{item_price_with_currency}}} </span>
+                </p>
             </div>
             {{{0}}}-->
         </widget>
@@ -93,16 +117,19 @@
                 }
             </script>
             <!--{{{0}}}
-            <div class="col-md-3">
-                <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                    <img style="border-radius: 50%;" src="{{{document_url_uri}}}?width=90&height=90" alt="{{{article_title}}}'s photo">
+            <div class="col-md-3 csx-product">
+                <a href="javascript:" data-href="{{{article_url}}}" onclick="if(this.href.includes(this.dataset.href)){ return true; } this.href=this.dataset.href;  return false;">
+                    <img class="csx-image" height="90" width="90" src="{{{document_url_uri}}}?width=90&height=90" alt="{{{article_title}}}'s photo">
                 </a>
-                <p>
-                    <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )">
-                        {{{article_title}}} - <s> {{{item_old_price}}} </s>{{{item_price_with_currency}}}
-                    </a>
+                <p class="csx-buttons">
+                    <a class="btn btn-info btn-sm" href="{{{article_url}}}">Details</a>
+                    <a href="javascript:" onclick="addProduct( '#{{{article_url}}}', '{{{article_title}}}' )" class="btn btn-primary btn-sm">Add to Cart</a>
                 </p>
-                
+                <p>
+                    <a href="javascript:" data-href="{{{article_url}}}" onclick="if(this.href.includes(this.dataset.href)){ return true; } this.href=this.dataset.href;  return false;"> 
+                        {{{article_title}}} 
+                    </a> <br><span style="display:inline-block;"><s> {{{item_old_price}}} </s> {{{item_price_with_currency}}} </span>
+                </p>
             </div>
             {{{0}}}-->
         </widget>
@@ -124,10 +151,6 @@
 
         element.value = article_url;
         element.onchange();
-    }
-    window.onload = function()
-    {
-        $(".product-xy").select2('open'); 
     }
 </script>
 

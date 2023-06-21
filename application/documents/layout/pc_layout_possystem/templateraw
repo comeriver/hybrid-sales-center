@@ -21,11 +21,10 @@
                     <nav class="navbar navbar-expand-lg navbar-light bg-light" data-pc-menu-ignore="1"> 
                         <a class="navbar-brand" href="/"><img src="/img/logo.png" style="max-height: 30px;" alt="{Organization Name}"></a> 
                         <span class="navbar-text">
-
-                            <widget parameters='{ "class": "Application_SiteInfo" }'>
-                                <i class="fa fa-chevron-right"></i> 
-                                {{{site_headline}}}
-                            </widget>
+                            <widget parameters='{ "class": "Ayoola_Page_Info" }'>
+                              <i class="fa fa-chevron-right"></i> 
+                              {{{title}}}
+                            </widget>  
                         </span>  
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -71,33 +70,23 @@
                       </nav>
                     <div class="xy-container">
                         <div class="float-left" style="max-width: 80%;">
-                            <h2 class="inline-st" style="font-size: 20px; padding-right: 0.5em;">
-                                <widget parameters='{ "class": "Ayoola_Page_Info" }'>
-                                    {{{title}}}
-                                </widget>    
-                            </h2> 
-                            <span style="margin-right: 2em;"><span class="dot"></span> Online </span>
-                            
+                          <div class="dropdown show">
+                            <a onclick="$('.dropdown-toggle').dropdown();" class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Menu
+                              </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <widget parameters='{ "class": "Ayoola_Menu", "menu_name": "posoptions" }'>
+                                    <a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
+                                </widget>
+                            </div>
+                        </div>
 
-                            <widget parameters='{ "class": "Application_Subscription_Cart" }'>
-                              <span style="display: inline-block;"><a href="/cart"><i styleclass="fa fa-shopping-cart"></i>  {{{no_of_items}}} Items ({{{currency}}}{{{total_price}}})</a></span> 
-                            </widget>
-
-                            
-                            
-                            
                         </div>
                         <div class="float-right">
-                            <div class="dropdown show">
-                                <a onclick="$('.dropdown-toggle').dropdown();" class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   Menu
-                                  </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <widget parameters='{ "class": "Ayoola_Menu", "menu_name": "posoptions" }'>
-                                        <a class="dropdown-item" href="{{{url}}}">{{{option_name}}}</a>
-                                    </widget>
-                                </div>
-                            </div>
+                            <widget parameters='{ "class": "Application_Subscription_Cart" }'>
+                              <span><a class="btn btn-secondary btn-sm" href="/cart"><i class="fa fa-shopping-cart"></i>  {{{no_of_items}}} Items ({{{currency}}}{{{total_price}}})</a></span> 
+                            </widget>    
+
                         </div>
                         <div class="clearfix"></div>
                     </div>      
@@ -106,7 +95,7 @@
             </div>
 
             <footer id="footer" class="bg-light">
-               &copy; 2021 {Organization Name} | Made by <a href="https://www.comeriver.com">Comeriver LTD</a> | Powered by <a href="https://www.pagecarton.org">PageCarton</a> 
+               &copy; 2023 {Organization Name} | Made by <a href="https://www.comeriver.com">Comeriver LTD</a> | Powered by <a href="https://www.pagecarton.org">PageCarton</a> 
             </footer>
 
           </div>
