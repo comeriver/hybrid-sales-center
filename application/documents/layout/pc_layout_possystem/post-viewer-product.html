@@ -29,9 +29,31 @@
 
                         <div>
                             <widget parameters='{ "class": "Application_Article_View" }'>
+
                                 <h1>{{{article_title}}}</h1>
+                                <br>
                                 <p><span style="display:inline-block;"><s> {{{item_old_price}}} </s> {{{item_price_with_currency}}} </span></p>
-                                <p><img class="csx-image" style="max-height: 500px;" src="{{{document_url_uri}}}" alt="{{{article_title}}}'s photo"></p>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <widget-inner parameters='{ "class": "Application_Article_Type_Subscription", "multi-price": true }'></widget-inner>                                    
+
+                                        <img class="csx-image" src="{{{document_url_uri}}}" alt="{{{article_title}}}'s photo">    
+
+                                        <widget-inner parameters='{ "class": "Application_Article_Type_Subscription" }'></widget-inner>
+
+
+
+                                    </div>
+                                    <div class="col-md-6">    
+
+
+                                    </div>
+
+
+
+                                </div>
                                 {{{article_content}}}
                             </widget>    
                         </div>
